@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1>Blog Pessoal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+ 
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-post.html">Adicionar Postagem</a>
+        </nav>
+    </header>
+    <main>
+        <div id="post-details">
+            <!-- Detalhes da postagem serão inseridos aqui pelo JavaScript -->
+        </div>
+        
+        <main>
+            <h2>Adicionar Nova Postagem</h2>
+            <form id="post-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" required>
+                <label for="content">Conteúdo:</label>
+                <textarea id="content" required></textarea>
+                <label for="date">Data:</label>
+                <input type="date" id="date" required>
+                <button type="submit">Adicionar Postagem</button>
+            </form>
+        </main>
+        <main>
+           
+            <h2>Postagens</h2>
+            <div id="post-list">
+                <!-- Postagens serão inseridas aqui pelo JavaScript -->
+            </div>
+        </main>
+        
+        <section id="comments-section">
+            <h3>Comentários</h3>
+            <div id="comments-list">
+                <!-- Comentários serão inseridos aqui pelo JavaScript -->
+            </div>
+            <textarea id="comment-input" placeholder="Deixe seu comentário..."></textarea>
+            <button id="add-comment">Adicionar Comentário</button>
+        </section>
+    </main>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="add-post.html">Adicionar Postagem</a>
+    </nav>
+</header>
+
+</body>
+</html>
